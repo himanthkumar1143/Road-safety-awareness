@@ -1,0 +1,398 @@
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* SMOOTH SCROLL */
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* BODY */
+
+body{
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    color: #111827;
+    line-height: 1.6;
+}
+
+/* GENERAL SECTION */
+
+.section{
+    padding: 80px 10%;
+}
+
+.section-title{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: #0f172a;
+}
+
+/* NAVBAR */
+
+.navbar{
+
+    background: #0f172a;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 10%;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+.logo{
+    color: #facc15;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover{
+    color: #facc15;
+}
+
+/* HERO SECTION */
+
+.hero{
+
+    height: 100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url("images/hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+
+    padding: 20px;
+}
+
+.hero-content h2{
+    color: #facc15;
+    font-size: 30px;
+}
+
+.hero-content h1{
+    font-size: 70px;
+    margin: 20px 0;
+}
+
+.hero-content p{
+    max-width: 700px;
+    margin: auto;
+    font-size: 20px;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 30px;
+
+    background: #facc15;
+    color: black;
+
+    padding: 15px 35px;
+
+    text-decoration: none;
+    border-radius: 5px;
+
+    transition: 0.3s;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+}
+
+/* IMPORTANCE CARDS */
+
+.card-container{
+    display: flex;
+    gap: 20px;
+}
+
+.card{
+    background: white;
+    padding: 40px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card h3{
+    margin-bottom: 15px;
+}
+
+/* TRAFFIC SIGNS */
+
+.signs{
+    background: #e2e8f0;
+}
+
+.sign-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 25px;
+}
+
+.sign-card{
+    background: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+.sign-card:hover{
+    transform: scale(1.03);
+}
+
+.sign-card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.sign-card h3,
+.sign-card p{
+    padding: 15px;
+}
+
+/* SAFETY */
+
+.safety-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 25px;
+}
+
+.safety-card{
+    background: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+.safety-card:hover{
+    transform: translateY(-10px);
+}
+
+.safety-card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.safety-card h3,
+.safety-card p{
+    padding: 15px;
+}
+
+/* TABLE */
+
+.statistics{
+    background: #e2e8f0;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th,
+td{
+    border: 1px solid #ccc;
+    padding: 18px;
+    text-align: center;
+}
+
+th{
+    background: #0f172a;
+    color: white;
+}
+
+/* EMERGENCY */
+
+.emergency-container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.emergency-card{
+    background: #0f172a;
+    color: white;
+
+    padding: 30px;
+
+    width: 220px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.emergency-card:hover{
+    background: #facc15;
+    color: black;
+}
+
+/* GALLERY */
+
+.gallery{
+    background: #e2e8f0;
+}
+
+.gallery-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 20px;
+}
+
+.gallery-grid img{
+    width: 100%;
+    height: 250px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+.gallery-grid img:hover{
+    transform: scale(1.03);
+}
+
+/* CONTACT */
+
+form{
+    max-width: 700px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+input,
+textarea{
+    padding: 18px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+textarea{
+    height: 180px;
+}
+
+form button{
+    padding: 18px;
+
+    background: #0f172a;
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+form button:hover{
+    background: #facc15;
+    color: black;
+}
+
+/* FOOTER */
+
+footer{
+    background: #0f172a;
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width: 768px){
+
+    .navbar{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-content h1{
+        font-size: 45px;
+    }
+
+    .hero-content p{
+        font-size: 18px;
+    }
+
+    .card-container{
+        flex-direction: column;
+    }
+
+}
